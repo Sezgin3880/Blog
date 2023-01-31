@@ -1,1 +1,1 @@
-# Blog with php and tailwind
+# Blog with php/ mysql/ tailwind

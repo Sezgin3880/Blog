@@ -31,9 +31,15 @@ $result = mysqli_query($conn, $sql);
   <div class="container mx-auto">
     <?php if (mysqli_num_rows($result) > 0): ?>
       <?php while($row = mysqli_fetch_assoc($result)): ?>
+        <?php 
+            $description = substr($row['description'], 0, 32);
+            if (strlen($row['description']) > 32) {
+                $description .= "...";
+            }
+        ?>
         <div class="bg-white p-5 rounded-lg shadow mt-10">
           <h3 class="text-xl font-bold"><?php echo $row['title']; ?></h3>
-          <p class="text-gray-700"><?php echo $row['description']; ?></p>
+          <p class="text-gray-700"><?php echo $description; ?></p>
           <a href="post.php?id=<?php echo $row['id']; ?>" class="text-blue-500">Read More</a>
         </div>
       <?php endwhile; ?>

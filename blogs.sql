@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 31 jan 2023 om 22:16
+-- Gegenereerd op: 31 jan 2023 om 22:56
 -- Serverversie: 10.4.25-MariaDB
 -- PHP-versie: 8.1.10
 
@@ -38,9 +38,9 @@ CREATE TABLE `blogs` (
 --
 
 INSERT INTO `blogs` (`id`, `title`, `description`) VALUES
-(1, 'Blog Post 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'),
-(2, 'Blog Post 2', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
-(3, 'Blog Post 3', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+(1, 'Blog Post 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'),
+(2, 'Blog Post 2', 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'),
+(3, 'Blog Post 3', 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
 
 --
 -- Indexen voor geëxporteerde tabellen

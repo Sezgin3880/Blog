@@ -47,7 +47,10 @@ $result = mysqli_query($conn, $sql);
       <p class="text-center">No blog posts found.</p>
     <?php endif; ?>
   </div>
-  
+
+  <div class="mt-10 text-center">
+    <a href="create_post.php" class="bg-blue-500 text-white px-5 py-2 rounded-lg shadow">Create a Post</a>
+  </div>
   
 </body>
 </html>

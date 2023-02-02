@@ -37,12 +37,18 @@ $result = mysqli_query($conn, $sql);
                 $description .= "...";
             }
         ?>
-        <div class="bg-white p-5 rounded-lg shadow mt-10">
-          <h3 class="text-xl font-bold"><?php echo $row['title']; ?></h3>
-          <p class="text-gray-700"><?php echo $description; ?></p>
-          <a href="post.php?id=<?php echo $row['id']; ?>" class="text-blue-500">Read More</a>
-        </div>
-      <?php endwhile; ?>
+  <div class="bg-white p-5 rounded-lg shadow mt-10">
+        <h3 class="text-xl font-bold"><?php echo $row['title']; ?></h3>
+        <p class="text-gray-700"><?php echo $description; ?></p>
+        <a href="post.php?id=<?php echo $row['id']; ?>" class="text-blue-500">Read More</a>
+
+  <div class=" text-right">
+    <a href="edit_post.php" class="bg-blue-500 text-white px-3 py-1.5 rounded-lg ml-auto">Edit Post</a>
+  </div>
+
+
+      </div>
+    <?php endwhile; ?>
     <?php else: ?>
       <p class="text-center">No blog posts found.</p>
     <?php endif; ?>

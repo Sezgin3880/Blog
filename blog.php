@@ -43,7 +43,7 @@ $result = mysqli_query($conn, $sql);
         <a href="post.php?id=<?php echo $row['id']; ?>" class="text-blue-500">Read More</a>
 
   <div class=" text-right">
-    <a href="edit_post.php" class="bg-blue-500 text-white px-3 py-1.5 rounded-lg ml-auto">Edit Post</a>
+   <a href="edit_post.php?id=<?php echo $row['id']; ?>"class="bg-blue-500 text-white px-3 py-1.5 rounded-lg ml-auto">Edit</a>
     <a href="delete_post.php?id=<?php echo $row['id']; ?>" class="bg-red-500 text-white px-3 py-1.5 rounded-lg">Delete Post</a>
   </div>
 
